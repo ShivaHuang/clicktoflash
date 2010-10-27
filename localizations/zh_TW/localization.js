@@ -6,7 +6,7 @@
 const PLUGIN_GENERIC = "Plugin";
 
 // Contextual menu items
-const LOAD_ALL_PLUGINS = "載入所有的 Plugins";
+const LOAD_ALL_PLUGINS = "載入所有的外掛模組";
 const LOAD_ALL_FLASH = "載入所有的 Flash";
 const ADD_TO_LOC_WHITELIST = "將網址加入白名單";
 const ADD_TO_SRC_WHITELIST = "將來源加入白名單";
@@ -22,7 +22,7 @@ const VIEW_ON_SITE = function(site) {return "在 " + site + " 上檢視";};
 // Dialogs
 const QT_CONFIRM_LAUNCH_DIALOG = function(url) {return "一個 QuickTime 物件想要在 QuickTime Player 中播放\n\n" + url + "\n\n您要允許它嗎？";};
 const ADD_TO_LOC_WHITELIST_DIALOG = "允許位於下列網址的嵌入式內容：";
-const ADD_TO_SRC_WHITELIST_DIALOG = "允許來自於下列來源的嵌入式內容";
+const ADD_TO_SRC_WHITELIST_DIALOG = "允許來自於下列來源的嵌入式內容：";
 const ADD_TO_LOC_WHITELIST_DIALOG_FLASH = "允許位於下列網址的 Flash：";
 const ADD_TO_SRC_WHITELIST_DIALOG_FLASH = "允許來自於下列來源的 Flash：";
 
