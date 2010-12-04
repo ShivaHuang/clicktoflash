@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Title</key>
-		<string>Video Settings</string>
+		<string>Ajustes de vídeo</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -14,7 +14,7 @@
 		<key>Key</key>
 		<string>useH264</string>
 		<key>Title</key>
-		<string>Look for video replacements to Flash            </string>
+		<string>Buscar alternativas al contenido en Flash             </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -24,7 +24,7 @@
 		<key>Key</key>
 		<string>usePlaylists</string>
 		<key>Title</key>
-		<string>Use playlists                                                   </string>
+		<string>Usar listas de reproducción                                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -34,7 +34,7 @@
 		<key>Key</key>
 		<string>showPoster</string>
 		<key>Title</key>
-		<string>Show preview image on placeholder              </string>
+		<string>Mostrar la imagen de previsualización                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -44,7 +44,7 @@
 		<key>Key</key>
 		<string>H264autoload</string>
 		<key>Title</key>
-		<string>Load the video player automatically              </string>
+		<string>Cargar el reproductor de vídeo automáticamente</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -54,7 +54,7 @@
 		<key>Key</key>
 		<string>H264whitelist</string>
 		<key>Title</key>
-		<string>on these sites</string>
+		<string>en las direcciones</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -64,12 +64,12 @@
 		<key>Key</key>
 		<string>H264behavior</string>
 		<key>Title</key>
-		<string>Initial behavior</string>
+		<string>Acción inicial</string>
 		<key>Titles</key>
 		<array>
-			<string>Do not buffer</string>
-			<string>Start buffering</string>
-			<string>Start buffering and play automatically</string>
+			<string>No cargar el vídeo</string>
+			<string>Empezar a cargar el vídeo</string>
+			<string>Empezar a cargar y reproducir el vídeo</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -86,12 +86,12 @@
 		<key>Key</key>
 		<string>QTbehavior</string>
 		<key>Title</key>
-		<string>Nonnative codecs</string>
+		<string>Códecs no nativos</string>
 		<key>Titles</key>
 		<array>
-			<string>Do not use</string>
-			<string>Use only as a last resort</string>
-			<string>Use freely</string>
+			<string>No usar</string>
+			<string>Usar como última opción</string>
+			<string>Usar indistintamente</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -108,10 +108,9 @@
 		<key>Key</key>
 		<string>maxresolution</string>
 		<key>Title</key>
-		<string>Max resolution</string>
+		<string>Resolución máxima</string>
 		<key>Titles</key>
 		<array>
-			<string>360p</string>
 			<string>480p</string>
 			<string>720p</string>
 			<string>1080p</string>
@@ -121,7 +120,6 @@
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<real>0</real>
 			<real>1</real>
 			<real>2</real>
 			<real>3</real>
@@ -138,13 +136,13 @@
 		<key>StepValue</key>
 		<real>0.01</real>
 		<key>Title</key>
-		<string>Sound volume</string>
+		<string>Volumen</string>
 		<key>Type</key>
 		<string>Slider</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Whitelists</string>
+		<string>Lista blanca</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -154,17 +152,17 @@
 		<key>Key</key>
 		<string>uselocWhitelist</string>
 		<key>Title</key>
-		<string>Allow Flash on locations                                </string>
+		<string>Permitir el contenido Flahs en direcciones     </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<string>www.example.com www.example2.com</string>
+		<string>www.ejemplo.com www.ejemplo2.com</string>
 		<key>Key</key>
 		<string>locwhitelist</string>
 		<key>Title</key>
-		<string>matching</string>
+		<string>que contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -174,7 +172,7 @@
 		<key>Key</key>
 		<string>locblacklist</string>
 		<key>Title</key>
-		<string>not matching</string>
+		<string>que no contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -184,7 +182,7 @@
 		<key>Key</key>
 		<string>usesrcWhitelist</string>
 		<key>Title</key>
-		<string>Allow Flash from sources                               </string>
+		<string>Permitir el contenido Flash cuya procedencia</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -194,7 +192,7 @@
 		<key>Key</key>
 		<string>srcwhitelist</string>
 		<key>Title</key>
-		<string>matching</string>
+		<string>contenga</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -204,7 +202,7 @@
 		<key>Key</key>
 		<string>srcblacklist</string>
 		<key>Title</key>
-		<string>not matching</string>
+		<string>no contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -214,7 +212,7 @@
 		<key>Key</key>
 		<string>loadInvisible</string>
 		<key>Title</key>
-		<string>Allow Flash if                                                  </string>
+		<string>Permitir el contenido Flash si                         </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -224,13 +222,13 @@
 		<key>Key</key>
 		<string>maxinvdim</string>
 		<key>Title</key>
-		<string>size is at most</string>
+		<string>el tamaño máximo es</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Contextual Menu Items</string>
+		<string>Elementos del menú contextual</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -240,7 +238,7 @@
 		<key>Key</key>
 		<string>useWLcontext</string>
 		<key>Title</key>
-		<string>Add to Whitelist                                             </string>
+		<string>Añadir a la lista blanca                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -250,7 +248,7 @@
 		<key>Key</key>
 		<string>useLAcontext</string>
 		<key>Title</key>
-		<string>Load All Flash                                                 </string>
+		<string>Cargar todo el contenido Flash      </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -260,7 +258,7 @@
 		<key>Key</key>
 		<string>useLIcontext</string>
 		<key>Title</key>
-		<string>Load Invisible Flash                                        </string>
+		<string>Cargar el contenido Flash invisible</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -270,7 +268,7 @@
 		<key>Key</key>
 		<string>useDVcontext</string>
 		<key>Title</key>
-		<string>Download Video                                             </string>
+		<string>Descargar el vídeo                         </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -280,7 +278,7 @@
 		<key>Key</key>
 		<string>useVScontext</string>
 		<key>Title</key>
-		<string>View on Site                                                   </string>
+		<string>Ver en el sitio                                 </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -290,7 +288,7 @@
 		<key>Key</key>
 		<string>useQTcontext</string>
 		<key>Title</key>
-		<string>View in QuickTime Player                               </string>
+		<string>Ver en QuickTime Player                </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -304,12 +302,12 @@
 		<key>Key</key>
 		<string>sifrReplacement</string>
 		<key>Title</key>
-		<string>sIFR Text</string>
+		<string>Texto sIFR</string>
 		<key>Titles</key>
 		<array>
-			<string>Show text only</string>
-			<string>Treat as regular Flash</string>
-			<string>Load automatically</string>
+			<string>Sólo mostrar texto</string>
+			<string>Tratar como Flash</string>
+			<string>Cargar automáticamente</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -330,7 +328,7 @@
 		<key>StepValue</key>
 		<real>0.01</real>
 		<key>Title</key>
-		<string>Opacity</string>
+		<string>Opacidad</string>
 		<key>Type</key>
 		<string>Slider</string>
 	</dict>
@@ -340,7 +338,7 @@
 		<key>Key</key>
 		<string>debug</string>
 		<key>Title</key>
-		<string>Block content manually                                  </string>
+		<string>Bloquear el contenido manualmente</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>

@@ -67,7 +67,7 @@ function respondToMessage(event) {
 
 function respondToCanLoad(message) {
     // Make checks in correct order for optimal performance
-    if(message.location !== undefined) return blockOrAllow(message);
+    if(message.location !== undefined) return blockOrAllow(message.data, message.location);
     switch(message) {
         case "getSettings":
             return getSettings();
@@ -80,17 +80,17 @@ function respondToCanLoad(message) {
     }
 }
 
-function blockOrAllow(data) { // check the whitelists and returns true if element can be loaded
+function blockOrAllow(data, location) { // check the whitelists and returns true if element can be loaded
 
     // Deal with invisible plugins
-    if(safari.extension.settings["loadInvisible"] && data.dim.width > 0 && data.dim.height > 0) {
-        if(data.dim.width <= maxinvdim.width && data.dim.height <= maxinvdim.height) return true;
+    if(safari.extension.settings["loadInvisible"] && data.width > 0 && data.height > 0) {
+        if(data.width <= maxinvdim.width && data.height <= maxinvdim.height) return true;
     }
     
     // Deal with whitelisted content
     if(safari.extension.settings["uselocWhitelist"]) {
-        if(locwhitelist && matchList(locwhitelist, data.location)) return true;
-        if(locblacklist && !matchList(locblacklist, data.location)) return true;
+        if(locwhitelist && matchList(locwhitelist, location)) return true;
+        if(locblacklist && !matchList(locblacklist, location)) return true;
     }
     if(safari.extension.settings["usesrcWhitelist"]) {
         if(srcwhitelist && matchList(srcwhitelist, data.src)) return true;
@@ -170,7 +170,7 @@ function handleWhitelisting(type, url) {
 }
 
 // KILLERS
-const killers = [new YouTubeKiller(), new VimeoKiller(), new DailymotionKiller(), new VeohKiller(), new GenericKiller()];
+const killers = [new YouTubeKiller(), new VimeoKiller(), new DailymotionKiller(), new VeohKiller(), new BreakKiller(), new BlipKiller(), new MetacafeKiller(), new TumblrKiller(), new GenericKiller()];
 
 function findKillerFor(data) {
     for (var i = 0; i < killers.length; i++) {
