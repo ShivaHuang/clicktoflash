@@ -7,13 +7,13 @@
 	<key>CFBundleDisplayName</key>
 	<string>ClickToPlugin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.hoyois.safari.clicktoplugin</string>
+	<string>com.hoyois.safari.clicktoplugin.zh-TW</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.4.6</string>
+	<string>1.5.3</string>
 	<key>CFBundleVersion</key>
-	<string>1.4.6</string>
+	<string>1.5.3</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>

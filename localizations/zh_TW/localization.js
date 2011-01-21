@@ -8,8 +8,12 @@ const PLUGIN_GENERIC = "Plugin";
 // Contextual menu items
 const LOAD_ALL_PLUGINS = "載入所有的外掛模組";
 const LOAD_ALL_FLASH = "載入所有的 Flash";
+const LOAD_INVISIBLE_PLUGINS = "載入不可見的外掛模組";
+const LOAD_INVISIBLE_FLASH = "載入不可見的 Flash";
 const ADD_TO_LOC_WHITELIST = "將網址加入白名單";
 const ADD_TO_SRC_WHITELIST = "將來源加入白名單";
+const DOWNLOAD_VIDEO = "下載影片";
+const DOWNLOAD_AUDIO = "下載音訊";
 const VIEW_IN_QUICKTIME_PLAYER = "在 QuickTime Player 中檢視";
 const SHOW_ELEMENT = "顯示元件";
 const LOAD_PLUGIN = function(plugin) {return "載入 " + plugin;};

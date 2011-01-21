@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Title</key>
-		<string>MIME 設定</string>
+		<string>Ajustes MIME</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -14,12 +14,12 @@
 		<key>Key</key>
 		<string>block</string>
 		<key>Title</key>
-		<string>阻擋</string>
+		<string>Bloquear</string>
 		<key>Titles</key>
 		<array>
-			<string>所有 MIME 類型</string>
-			<string>所有 MIME 不符合白名單的類型</string>
-			<string>符合黑名單的 MIME 類型</string>
+			<string>todos los tipos MIME</string>
+			<string>todos los tipos MIME que no concuerden con la lista verde</string>
+			<string>sólo los tipos MIME que concuerden con la lista roja</string>
 		</array>
 		<key>Type</key>
 		<string>RadioButtons</string>
@@ -36,7 +36,7 @@
 		<key>Key</key>
 		<string>greenlist</string>
 		<key>Title</key>
-		<string>白名單</string>
+		<string>Lista verde</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>Key</key>
 		<string>redlist</string>
 		<key>Title</key>
-		<string>黑名單</string>
+		<string>Lista roja</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -56,13 +56,13 @@
 		<key>Key</key>
 		<string>allowQT</string>
 		<key>Title</key>
-		<string>允許 QuickTime 外掛模組       </string>
+		<string>Permitir el complemento de QuickTime                </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>影片設定</string>
+		<string>Ajustes de vídeo</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -72,7 +72,7 @@
 		<key>Key</key>
 		<string>useH264</string>
 		<key>Title</key>
-		<string>對下列類型尋找替代影片          </string>
+		<string>Buscar alternativas al contenido en                       </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -82,7 +82,7 @@
 		<key>Key</key>
 		<string>replaceFlash</string>
 		<key>Title</key>
-		<string>Flash                            </string>
+		<string>Flash                                             </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -92,7 +92,7 @@
 		<key>Key</key>
 		<string>replaceSL</string>
 		<key>Title</key>
-		<string>Silverlight                     </string>
+		<string>Silverlight                                      </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -102,7 +102,7 @@
 		<key>Key</key>
 		<string>replaceQT</string>
 		<key>Title</key>
-		<string>QuickTime                   </string>
+		<string>QuickTime                                    </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -112,7 +112,7 @@
 		<key>Key</key>
 		<string>replaceWM</string>
 		<key>Title</key>
-		<string>Windows Media            </string>
+		<string>Windows Media                             </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -122,7 +122,7 @@
 		<key>Key</key>
 		<string>replaceDivX</string>
 		<key>Title</key>
-		<string>DivX                             </string>
+		<string>DivX                                              </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -132,7 +132,7 @@
 		<key>Key</key>
 		<string>usePlaylists</string>
 		<key>Title</key>
-		<string>使用播放列表                           </string>
+		<string>Usar listas de reproducción                                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -142,7 +142,7 @@
 		<key>Key</key>
 		<string>showPoster</string>
 		<key>Title</key>
-		<string>在暫存區中顯示預覽影像           </string>
+		<string>Mostrar la imagen de previsualización                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -152,7 +152,7 @@
 		<key>Key</key>
 		<string>H264autoload</string>
 		<key>Title</key>
-		<string>自動載入影片播放器                 </string>
+		<string>Cargar el reproductor de vídeo automáticamente</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -162,7 +162,7 @@
 		<key>Key</key>
 		<string>H264whitelist</string>
 		<key>Title</key>
-		<string>在這些網站</string>
+		<string>en las direcciones</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -172,12 +172,12 @@
 		<key>Key</key>
 		<string>H264behavior</string>
 		<key>Title</key>
-		<string>初始動作</string>
+		<string>Acción inicial</string>
 		<key>Titles</key>
 		<array>
-			<string>不緩衝</string>
-			<string>開始緩衝</string>
-			<string>開始緩衝並且自動播放</string>
+			<string>No cargar el vídeo</string>
+			<string>Empezar a cargar el vídeo</string>
+			<string>Empezar a cargar y reproducir el vídeo</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -194,12 +194,12 @@
 		<key>Key</key>
 		<string>QTbehavior</string>
 		<key>Title</key>
-		<string>非原生解碼器</string>
+		<string>Códecs no nativos</string>
 		<key>Titles</key>
 		<array>
-			<string>不使用</string>
-			<string>作為最後的選擇</string>
-			<string>自由使用</string>
+			<string>No usar</string>
+			<string>Usar como última opción</string>
+			<string>Usar indistintamente</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -216,7 +216,7 @@
 		<key>Key</key>
 		<string>maxresolution</string>
 		<key>Title</key>
-		<string>最高解析度</string>
+		<string>Resolución máxima</string>
 		<key>Titles</key>
 		<array>
 			<string>480p</string>
@@ -244,13 +244,13 @@
 		<key>StepValue</key>
 		<real>0.01</real>
 		<key>Title</key>
-		<string>音量</string>
+		<string>Volumen</string>
 		<key>Type</key>
 		<string>Slider</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>白名單</string>
+		<string>Lista blanca</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -260,7 +260,7 @@
 		<key>Key</key>
 		<string>uselocWhitelist</string>
 		<key>Title</key>
-		<string>允許嵌入式內容，如果它的網址</string>
+		<string>Permitir el contenido embedido en direcciones     </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -270,7 +270,7 @@
 		<key>Key</key>
 		<string>locwhitelist</string>
 		<key>Title</key>
-		<string>符合</string>
+		<string>que contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -280,7 +280,7 @@
 		<key>Key</key>
 		<string>locblacklist</string>
 		<key>Title</key>
-		<string>不符合</string>
+		<string>que no contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -290,7 +290,7 @@
 		<key>Key</key>
 		<string>usesrcWhitelist</string>
 		<key>Title</key>
-		<string>允許嵌入式內容，如果它的來源</string>
+		<string>Permitir el contenido embedido cuya procedencia</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -300,7 +300,7 @@
 		<key>Key</key>
 		<string>srcwhitelist</string>
 		<key>Title</key>
-		<string>符合</string>
+		<string>contenga</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -310,7 +310,7 @@
 		<key>Key</key>
 		<string>srcblacklist</string>
 		<key>Title</key>
-		<string>不符合</string>
+		<string>no contengan</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -320,7 +320,7 @@
 		<key>Key</key>
 		<string>loadInvisible</string>
 		<key>Title</key>
-		<string>允許載入元素，如果                 </string>
+		<string>Permitir el contenido embedido si                         </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -330,13 +330,13 @@
 		<key>Key</key>
 		<string>maxinvdim</string>
 		<key>Title</key>
-		<string>尺寸不大於</string>
+		<string>el tamaño máximo es</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>特色選單項目</string>
+		<string>Elementos del menú contextual</string>
 		<key>Type</key>
 		<string>Group</string>
 	</dict>
@@ -346,7 +346,7 @@
 		<key>Key</key>
 		<string>useWLcontext</string>
 		<key>Title</key>
-		<string>加入白名單                              </string>
+		<string>Añadir a la lista blanca                    </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -356,7 +356,7 @@
 		<key>Key</key>
 		<string>useLAcontext</string>
 		<key>Title</key>
-		<string>載入所有的外掛模組                 </string>
+		<string>Cargar todos los complementos      </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -366,7 +366,7 @@
 		<key>Key</key>
 		<string>useLIcontext</string>
 		<key>Title</key>
-		<string>載入不可見的外掛模組              </string>
+		<string>Cargar los complementos invisibles</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -376,7 +376,7 @@
 		<key>Key</key>
 		<string>useDVcontext</string>
 		<key>Title</key>
-		<string>下載影片                                 </string>
+		<string>Descargar el vídeo                           </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -386,7 +386,7 @@
 		<key>Key</key>
 		<string>useVScontext</string>
 		<key>Title</key>
-		<string>於網站上檢視                           </string>
+		<string>Ver en el sitio                                   </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -396,7 +396,7 @@
 		<key>Key</key>
 		<string>useQTcontext</string>
 		<key>Title</key>
-		<string>於 QuickTime Player 中檢視    </string>
+		<string>Ver en QuickTime Player                  </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -410,12 +410,12 @@
 		<key>Key</key>
 		<string>sifrReplacement</string>
 		<key>Title</key>
-		<string>sIFR 文字</string>
+		<string>Texto sIFR</string>
 		<key>Titles</key>
 		<array>
-			<string>只顯示文字</string>
-			<string>當作一般 Flash</string>
-			<string>自動載入</string>
+			<string>Sólo mostrar texto</string>
+			<string>Tratar como Flash</string>
+			<string>Cargar automáticamente</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -433,12 +433,10 @@
 		<string>opacity</string>
 		<key>MaximumValue</key>
 		<real>1</real>
-		<key>Secure</key>
-		<false/>
 		<key>StepValue</key>
 		<real>0.01</real>
 		<key>Title</key>
-		<string>透明度</string>
+		<string>Opacidad</string>
 		<key>Type</key>
 		<string>Slider</string>
 	</dict>
@@ -448,15 +446,9 @@
 		<key>Key</key>
 		<string>debug</string>
 		<key>Title</key>
-		<string>手動阻擋內容                           </string>
+		<string>Bloquear el contenido manualmente</string>
 		<key>Type</key>
 		<string>CheckBox</string>
-	</dict>
-	<dict>
-		<key>DefaultValue</key>
-		<true/>
-		<key>Key</key>
-		<string>mustUpdateWhitelists</string>
 	</dict>
 </array>
 </plist>

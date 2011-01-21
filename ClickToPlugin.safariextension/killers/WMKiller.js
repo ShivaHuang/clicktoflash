@@ -1,20 +1,17 @@
-function WMKiller() {
-    this.name = "WMKiller";
-}
+function WMKiller() {}
 
 WMKiller.prototype.canKill = function(data) {
-    return (data.plugin == "WM" && safari.extension.settings["replaceWM"] && safari.extension.settings["QTbehavior"] > 1 && canPlayWM);
+    return (data.plugin == "Flip4Mac" && canPlayWM);
 };
 
 WMKiller.prototype.processElement = function(data, callback) {
-    var mediaType = willPlaySrcWithHTML5(data.src);
+    var mediaType = canPlaySrcWithHTML5(data.src);
     if(!mediaType) return;
-    var isAudio = mediaType == "audio";
+    var sources = [{"url": data.src, "isNative": false}];
     
     var mediaData = {
-        "playlist": [{"mediaType": "video", "mediaURL": data.src}],
-        "badgeLabel": isAudio ? "Audio" : "Video",
-        "isAudio": isAudio
+        "playlist": [{"mediaType": mediaType.type, "sources": sources}],
+        "isAudio": mediaType.type === "audio"
     };
     callback(mediaData);
 };
