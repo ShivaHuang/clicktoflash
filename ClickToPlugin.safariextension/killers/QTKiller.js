@@ -1,18 +1,27 @@
 function QTKiller() {}
 
-
 QTKiller.prototype.canKill = function(data) {
     // streaming does not seem supported by HTML5 video in Safari
-    return (data.plugin == "QuickTime" && data.src.substring(0,4) == "http" && (!data.href || data.href.substring(0,4) == "http"));
+    return (data.plugin === "QuickTime" && data.src.substring(0,4) === "http" && (!data.href || data.href.substring(0,4) === "http"));
 };
 
 
-QTKiller.prototype.processElement = function(data, callback) {
-    var playlist = [{"mediaType": "video", "sources": [{"url": data.src, "isNative": true}]}];
-    if(data.href) playlist.push({"mediaType": "video", "sources": [{"url": data.href, "isNative": true}]});
+QTKiller.prototype.process = function(data, callback) {
+    var isAudio = true;
+    var playlist = new Array();
+    var addTrack = function(url) {
+        var source = {"url": url, "isNative": true, "mediaType": "video"};
+        var mediaType = canPlaySrcWithHTML5(url);
+        if(mediaType && mediaType.type === "audio") source.mediaType = "audio";
+        else isAudio = false;
+        playlist.push({"sources": [source]});
+    };
+    addTrack(data.src);
+    if(data.href) addTrack(data.href);
     var videoData = {
         "noPlaylistControls": true,
-        "playlist": playlist
+        "playlist": playlist,
+        "isAudio": isAudio
     };
     callback(videoData);
 };

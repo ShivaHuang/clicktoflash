@@ -1,7 +1,7 @@
-// ClickToFlash/ClickToPlugin localization file
+// ClickToPlugin localization file
 // Save with encoding: UTF-8
 
-// ENGLISH
+// TRADITIONAL CHINESE
 
 const PLUGIN_GENERIC = "Plugin";
 
@@ -26,4 +26,3 @@ const QT_CONFIRM_LAUNCH_DIALOG = function(url) {return "一個 QuickTime 物件�
 const ADD_TO_LOC_WHITELIST_DIALOG = "允許位於下列網址的嵌入式內容：";
 const ADD_TO_LOC_BLACKLIST_DIALOG = "阻擋位於下列網址的嵌入式內容：";
 const ADD_TO_SRC_WHITELIST_DIALOG = "允許來自於下列來源的嵌入式內容：";
-

@@ -8,6 +8,50 @@ function downloadURL(url) {
     downloadLink.dispatchEvent(event);
 }
 
+function disableSIFR(element) {
+    var sIFRElement = element.parentNode;
+    if(!sIFRElement) return;
+    var regex = /\bsIFR-(?:hasFlash|active)\b/g;
+    document.documentElement.className = document.documentElement.className.replace(regex, "");
+    document.body.className = document.body.className.replace(regex, "");
+    var sIFRAlternate = sIFRElement.getElementsByClassName("sIFR-alternate")[0];
+    if(sIFRAlternate) sIFRElement.innerHTML = sIFRAlternate.innerHTML;
+    sIFRElement.className = sIFRElement.className.replace(/\bsIFR-replaced\b/, "");
+}
+
+function applyCSS(element, style, properties) {
+    for(var x in properties) {
+        element.style.setProperty(properties[x], style.getPropertyValue(properties[x]), "important");
+    }
+}
+
+function simplifyWheelDelta(x, y) {
+    if(x > y && y > -x) return "left";
+    if(x > y) return "down";
+    if(-x > y) return "right";
+    return "up";
+}
+
+function testShortcut(event, shortcut) {
+    for(var x in shortcut) {
+        if(x === "direction") {
+            if(simplifyWheelDelta(event.wheelDeltaX, event.wheelDeltaY) !== shortcut.direction) return false;
+            else continue;
+        }
+        if(event[x] !== shortcut[x]) return false;
+    }
+    event.preventDefault();
+    event.stopPropagation(); // immediate?
+    return true;
+}
+
+function removeHTMLNode(node) {
+    while(node.parentNode.childNodes.length === 1) {
+        node = node.parentNode;
+    }
+    node.parentNode.removeChild(node);
+}
+
 function getAttributes(element, url) {
     // Gathers essential attributes of the element that are needed to decide blocking.
     // Done by a single function so that we only loop once through the <param> children.

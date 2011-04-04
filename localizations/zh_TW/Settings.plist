@@ -24,7 +24,7 @@
 		<key>Key</key>
 		<string>invertPluginsWhitelist</string>
 		<key>Title</key>
-		<string>反轉清單                  </string>
+		<string>反轉清單                       </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>Key</key>
 		<string>invertWhitelists</string>
 		<key>Title</key>
-		<string>反轉清單                  </string>
+		<string>反轉清單                       </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -74,7 +74,7 @@
 		<key>Key</key>
 		<string>replacePlugins</string>
 		<key>Title</key>
-		<string>尋找外掛模組的替代影片      </string>
+		<string>尋找外掛模組的替代影片 </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -84,7 +84,7 @@
 		<key>Key</key>
 		<string>useSourceSelector</string>
 		<key>Title</key>
-		<string>顯示可用的來源清單             </string>
+		<string>顯示可用的來源清單       </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -94,7 +94,7 @@
 		<key>Key</key>
 		<string>usePlaylists</string>
 		<key>Title</key>
-		<string>使用播放列表                       </string>
+		<string>使用播放列表                 </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -104,7 +104,7 @@
 		<key>Key</key>
 		<string>mediaAutoload</string>
 		<key>Title</key>
-		<string>自動載入影片播放器             </string>
+		<string>自動載入影片播放器       </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -216,7 +216,7 @@
 		<key>Key</key>
 		<string>disableEnableContext</string>
 		<key>Title</key>
-		<string>停用/啓用 ClickToPlugin       </string>
+		<string>停用/啓用 ClickToPlugin     </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -236,7 +236,7 @@
 		<key>Key</key>
 		<string>loadAllContext</string>
 		<key>Title</key>
-		<string>載入所有的外掛模組             </string>
+		<string>載入所有的外掛模組             </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -246,7 +246,7 @@
 		<key>Key</key>
 		<string>loadInvisibleContext</string>
 		<key>Title</key>
-		<string>載入不可見的外掛模組          </string>
+		<string>載入不可見的外掛模組          </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -290,7 +290,7 @@
 		<key>Key</key>
 		<string>loadInvisible</string>
 		<key>Title</key>
-		<string>允許不可見的外掛模組          </string>
+		<string>允許不可見的外掛模組          </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -300,7 +300,7 @@
 		<key>Key</key>
 		<string>debug</string>
 		<key>Title</key>
-		<string>手動阻擋外掛模組                </string>
+		<string>手動阻擋外掛模組                </string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
@@ -353,6 +353,18 @@
 		<true/>
 		<key>Key</key>
 		<string>showPoster</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>showTooltip</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>showMediaTooltip</string>
 	</dict>
 </array>
 </plist>
